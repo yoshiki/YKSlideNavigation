@@ -168,7 +168,6 @@
 }
 
 - (void)closeMenu {
-    if (!self.menuOpened) return;
     self.menuOpened = NO;
     [self moveControllerViewOffset:0.0f animated:YES duration:kYKSlideNavigationSlideDuration];
     self.navigationController.topViewController.view.userInteractionEnabled = YES;
