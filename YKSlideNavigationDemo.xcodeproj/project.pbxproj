@@ -16,6 +16,10 @@
 		FCFCF2D71659EF8F00820F95 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFCF2D61659EF8F00820F95 /* Default.png */; };
 		FCFCF2D91659EF8F00820F95 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFCF2D81659EF8F00820F95 /* Default@2x.png */; };
 		FCFCF2DB1659EF8F00820F95 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FCFCF2DA1659EF8F00820F95 /* Default-568h@2x.png */; };
+		FCFCF2E41659EFD400820F95 /* YKSlideNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFCF2E31659EFD400820F95 /* YKSlideNavigationController.m */; };
+		FCFCF2E71659F17000820F95 /* PageOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFCF2E61659F17000820F95 /* PageOneViewController.m */; };
+		FCFCF2EA1659F17900820F95 /* PageTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFCF2E91659F17900820F95 /* PageTwoViewController.m */; };
+		FCFCF2ED1659F18B00820F95 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FCFCF2EC1659F18B00820F95 /* MenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,14 @@
 		FCFCF2D61659EF8F00820F95 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		FCFCF2D81659EF8F00820F95 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		FCFCF2DA1659EF8F00820F95 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FCFCF2E21659EFD400820F95 /* YKSlideNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YKSlideNavigationController.h; path = YKSlideNavigation/YKSlideNavigationController.h; sourceTree = "<group>"; };
+		FCFCF2E31659EFD400820F95 /* YKSlideNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YKSlideNavigationController.m; path = YKSlideNavigation/YKSlideNavigationController.m; sourceTree = "<group>"; };
+		FCFCF2E51659F17000820F95 /* PageOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageOneViewController.h; sourceTree = "<group>"; };
+		FCFCF2E61659F17000820F95 /* PageOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageOneViewController.m; sourceTree = "<group>"; };
+		FCFCF2E81659F17900820F95 /* PageTwoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageTwoViewController.h; sourceTree = "<group>"; };
+		FCFCF2E91659F17900820F95 /* PageTwoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageTwoViewController.m; sourceTree = "<group>"; };
+		FCFCF2EB1659F18A00820F95 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		FCFCF2EC1659F18B00820F95 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,7 @@
 		FCFCF2B51659EF8F00820F95 = {
 			isa = PBXGroup;
 			children = (
+				FCFCF2E11659EF9C00820F95 /* YKSlideNavigation */,
 				FCFCF2CA1659EF8F00820F95 /* YKSlideNavigationDemo */,
 				FCFCF2C31659EF8F00820F95 /* Frameworks */,
 				FCFCF2C11659EF8F00820F95 /* Products */,
@@ -78,9 +91,15 @@
 		FCFCF2CA1659EF8F00820F95 /* YKSlideNavigationDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FCFCF2CB1659EF8F00820F95 /* Supporting Files */,
 				FCFCF2D31659EF8F00820F95 /* AppDelegate.h */,
 				FCFCF2D41659EF8F00820F95 /* AppDelegate.m */,
-				FCFCF2CB1659EF8F00820F95 /* Supporting Files */,
+				FCFCF2E51659F17000820F95 /* PageOneViewController.h */,
+				FCFCF2E61659F17000820F95 /* PageOneViewController.m */,
+				FCFCF2E81659F17900820F95 /* PageTwoViewController.h */,
+				FCFCF2E91659F17900820F95 /* PageTwoViewController.m */,
+				FCFCF2EB1659F18A00820F95 /* MenuViewController.h */,
+				FCFCF2EC1659F18B00820F95 /* MenuViewController.m */,
 			);
 			path = YKSlideNavigationDemo;
 			sourceTree = "<group>";
@@ -97,6 +116,15 @@
 				FCFCF2DA1659EF8F00820F95 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCFCF2E11659EF9C00820F95 /* YKSlideNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				FCFCF2E21659EFD400820F95 /* YKSlideNavigationController.h */,
+				FCFCF2E31659EFD400820F95 /* YKSlideNavigationController.m */,
+			);
+			name = YKSlideNavigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +194,10 @@
 			files = (
 				FCFCF2D11659EF8F00820F95 /* main.m in Sources */,
 				FCFCF2D51659EF8F00820F95 /* AppDelegate.m in Sources */,
+				FCFCF2E41659EFD400820F95 /* YKSlideNavigationController.m in Sources */,
+				FCFCF2E71659F17000820F95 /* PageOneViewController.m in Sources */,
+				FCFCF2EA1659F17900820F95 /* PageTwoViewController.m in Sources */,
+				FCFCF2ED1659F18B00820F95 /* MenuViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +271,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YKSlideNavigationDemo/YKSlideNavigationDemo-Prefix.pch";
 				INFOPLIST_FILE = "YKSlideNavigationDemo/YKSlideNavigationDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -250,6 +283,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YKSlideNavigationDemo/YKSlideNavigationDemo-Prefix.pch";
 				INFOPLIST_FILE = "YKSlideNavigationDemo/YKSlideNavigationDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -274,6 +308,7 @@
 				FCFCF2E01659EF8F00820F95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

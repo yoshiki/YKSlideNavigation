@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "YKSlideNavigationController.h"
+#import "PageOneViewController.h"
+#import "MenuViewController.h"
 
 @implementation AppDelegate
 
@@ -15,6 +18,16 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    PageOneViewController *c = [[PageOneViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:c];
+    
+    MenuViewController *menu = [[MenuViewController alloc] init];
+    
+    YKSlideNavigationController *slideNav = [YKSlideNavigationController sharedController];
+    [slideNav setupWithNavigationController:nav menuViewController:menu];
+    self.window.rootViewController = slideNav;
+    
     [self.window makeKeyAndVisible];
     return YES;
 }
